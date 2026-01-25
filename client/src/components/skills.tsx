@@ -15,9 +15,9 @@ const skills = [
     items: ["Apache Camel", "Kafka", "Docker", "CI/CD Pipelines", "API Gateway", "Message Queues"]
   },
   {
-    category: "Frontend & Web",
+    category: "Frontend Engineering",
     icon: <Globe className="w-6 h-6 text-emerald-400" />,
-    items: ["React.js", "TypeScript", "Tailwind CSS", "Vite", "Responsive Design", "State Management"]
+    items: ["React 18+", "TypeScript", "Tailwind CSS", "Vite", "Responsive Design", "State Management (Context/Query)"]
   }
 ];
 

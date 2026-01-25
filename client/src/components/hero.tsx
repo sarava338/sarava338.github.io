@@ -35,7 +35,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl font-light">
-            Full Stack Developer specializing in <strong className="text-white font-medium">Java Spring Boot</strong> architecture. 
+            Full Stack Developer specializing in <strong className="text-white font-medium">Java Spring Boot</strong> and <strong className="text-white font-medium">React</strong>. 
             Leveraging 3 years of deep integration expertise to build scalable, resilient web applications.
           </p>
 
@@ -59,8 +59,8 @@ export default function Hero() {
               <div className="text-sm text-muted-foreground uppercase tracking-wider">Integration Specialist</div>
             </div>
             <div className="hidden md:block">
-              <div className="text-3xl font-mono font-bold text-white mb-1">Java</div>
-              <div className="text-sm text-muted-foreground uppercase tracking-wider">Core Expertise</div>
+              <div className="text-3xl font-mono font-bold text-white mb-1">Spring/React</div>
+              <div className="text-sm text-muted-foreground uppercase tracking-wider">Core Stack</div>
             </div>
           </div>
         </motion.div>
