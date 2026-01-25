@@ -10,9 +10,9 @@ const skills = [
     items: ["Java 17+", "Spring Boot 3", "Hibernate/JPA", "REST APIs", "Microservices", "PostgreSQL"]
   },
   {
-    category: "Integration & DevOps",
+    category: "Integration & Middleware",
     icon: <Workflow className="w-6 h-6 text-secondary-foreground" />,
-    items: ["Apache Camel", "Kafka", "Docker", "CI/CD Pipelines", "API Gateway", "Message Queues"]
+    items: ["webMethods IS", "Universal Messaging", "MWS", "Trading Networks", "Kafka", "Docker", "CI/CD Pipelines"]
   },
   {
     category: "Frontend Engineering",

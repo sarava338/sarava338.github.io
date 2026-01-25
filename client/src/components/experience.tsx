@@ -14,9 +14,9 @@ const experience = [
     role: "Integration Specialist",
     company: "Previous Experience",
     period: "3 Years",
-    description: "Specialized in system integration and middleware solutions. Orchestrated data flow between legacy systems and modern platforms, ensuring 99.9% uptime for critical data pipelines.",
+    description: "Specialized in enterprise system integration using the webMethods suite. Architected solutions using Integration Server, Universal Messaging, and Designer to orchestrate complex data flows between legacy systems and modern platforms.",
     type: "past",
-    tech: ["Apache Camel", "Enterprise Integration Patterns", "SOAP/REST"]
+    tech: ["webMethods IS", "Universal Messaging", "Software AG", "EAI", "B2B"]
   }
 ];
 
