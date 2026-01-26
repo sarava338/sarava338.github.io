@@ -28,9 +28,9 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-heading font-bold leading-tight text-white mb-6">
-            Engineering <br />
+            Saravanan <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">
-              Robust Solutions
+              Lakshmanan
             </span>
           </h1>
 
