@@ -1,4 +1,3 @@
-import { Link } from "wouter";
 import { Github, Linkedin, Instagram, Code2 } from "lucide-react";
 import Hero from "@/components/hero";
 import Experience from "@/components/experience";
@@ -14,9 +13,15 @@ export default function Home() {
             SARAVANAN<span className="text-primary">.L</span>
           </div>
           <div className="hidden md:flex items-center gap-8 font-mono text-sm text-muted-foreground">
-            <a href="#" className="hover:text-white transition-colors">Experience</a>
-            <a href="#" className="hover:text-white transition-colors">Skills</a>
-            <a href="#" className="hover:text-white transition-colors">Projects</a>
+            <a href="#experience" className="hover:text-white transition-colors">
+              Experience
+            </a>
+            <a href="#skills" className="hover:text-white transition-colors">
+              Skills
+            </a>
+            <a href="#projects" className="hover:text-white transition-colors">
+              Projects
+            </a>
             <div className="flex items-center gap-4 ml-4 pl-4 border-l border-white/10">
               <a href="https://github.com/sarava338" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
                 <Github className="w-4 h-4" />
@@ -36,15 +41,23 @@ export default function Home() {
       </nav>
 
       <main>
-        <Hero />
-        <Experience />
-        <Skills />
-        <Projects />
+        <article id="home">
+          <Hero />
+        </article>
+        <article id="experience">
+          <Experience />
+        </article>
+        <article id="skills">
+          <Skills />
+        </article>
+        <article id="projects">
+          <Projects />
+        </article>
       </main>
 
       <footer className="py-8 border-t border-white/5 bg-black/20">
         <div className="container mx-auto px-6 text-center text-sm text-muted-foreground font-mono">
-          <p>© 2024 Saravanan Lakshmanan. Built with React & Spring Boot Principles.</p>
+          <p>© 2024 Saravanan Lakshmanan. Built with React Principles.</p>
         </div>
       </footer>
     </div>
