@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Github, Linkedin, Instagram } from "lucide-react";
+import { Github, Linkedin, Instagram, Code2 } from "lucide-react";
 import Hero from "@/components/hero";
 import Experience from "@/components/experience";
 import Skills from "@/components/skills";
@@ -26,6 +26,9 @@ export default function Home() {
               </a>
               <a href="https://instagram.com/sarava338" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
                 <Instagram className="w-4 h-4" />
+              </a>
+              <a href="https://leetcode.com/sarava338" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+                <Code2 className="w-4 h-4" />
               </a>
             </div>
           </div>
