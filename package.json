@@ -6,9 +6,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "tsx script/build.ts",
+    "build": "bunx --bun vite build",
     "check": "tsc",
-    "predeploy": "npm run build",
+    "predeploy": "bun run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
