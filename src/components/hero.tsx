@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Terminal, Database, Layers } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
@@ -32,13 +31,13 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="#projects" className="hover:text-white">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono text-base h-12 px-8">
+              <button className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono text-base h-12 px-8">
                 View Projects <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
+              </button>
             </a>
-            <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/5 text-white font-mono text-base h-12 px-8">
+            <button className="border border-white/10 hover:bg-white/5 text-white font-mono text-base h-12 px-8">
               Download CV
-            </Button>
+            </button>
           </div>
 
           {/* Quick Stats */}
