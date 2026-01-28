@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code2, Server, Globe, Database, Workflow, Cpu } from "lucide-react";
+import { Server, Globe, Workflow } from "lucide-react";
 
 const skills = [
   {

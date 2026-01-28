@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Calendar, Briefcase, ChevronUp } from "lucide-react";
+import { Briefcase } from "lucide-react";
 
 const experience = [
   {

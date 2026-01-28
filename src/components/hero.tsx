@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Terminal, Database, Layers } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
