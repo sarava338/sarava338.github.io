@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "sarava338"
+  },
+  "targets": {
+    "sarava338": {
+      "hosting": {
+        "sarava338": [
+          "sarava338"
+        ]
+      }
+    }
+  }
+}
