@@ -8,7 +8,7 @@ const experience = [
     period: "Last 6 Months",
     description: "Transitioned to full-stack development, building scalable web applications using Java Spring Boot and React. Designing RESTful APIs and optimized database schemas.",
     type: "current",
-    tech: ["Spring Boot", "React", "PostgreSQL"]
+    tech: ["Spring Boot", "React", "PostgreSQL", "AWS"]
   },
   {
     role: "Integration Specialist",
@@ -45,9 +45,7 @@ export default function Experience() {
                 initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className={`relative flex flex-col md:flex-row gap-8 ${
-                  index % 2 === 0 ? "md:flex-row-reverse" : ""
-                }`}
+                className={`relative flex flex-col md:flex-row gap-8 ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}
               >
                 {/* Timeline Dot */}
                 <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-background border-2 border-primary rounded-full translate-y-1.5 md:-translate-x-2 z-10 shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
@@ -78,7 +76,7 @@ export default function Experience() {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Spacer for the other side */}
                 <div className="hidden md:block flex-1" />
               </motion.div>
