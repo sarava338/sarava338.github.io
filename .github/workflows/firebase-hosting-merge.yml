@@ -20,6 +20,10 @@ jobs:
     steps:
       - name: 🔄 Checkout Repo
         uses: actions/checkout@v4
+      - name: ⚙️ Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
 
       - name: 📦 Install Dependencies
         run: |
@@ -44,12 +48,11 @@ jobs:
           VITE_FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID }}
           VITE_FIREBASE_MEASUREMENT_ID: ${{ secrets.VITE_FIREBASE_MEASUREMENT_ID }}
 
-
       - name: 🚀 Deploy to sarava338 site
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.VITE_FIREBASE_SERVICE_ACCOUNT_SARAVA338 }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SARAVA338 }}
           projectId: ${{ secrets.VITE_FIREBASE_PROJECT_ID }}
           channelId: live
           target: sarava338
