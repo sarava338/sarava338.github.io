@@ -1,0 +1,55 @@
+name: Deploy to Firebase Hosting on merge
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.js"
+      - "**/*.jsx"
+      - "**/*.ts"
+      - "**/*.tsx"
+      - "**/*.css"
+      - "**/*.html"
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    environment: firebase # ✅ This line tells GitHub to use env secrets
+
+    steps:
+      - name: 🔄 Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: 📦 Install Dependencies
+        run: |
+          echo "deleting node_modules directory and package-lock.json file"
+          rm -rf node_modules package-lock.json bun.lock
+          echo "🔧 Installing dependencies using bun install"
+          bun install
+          echo "✅ Dependencies installed."
+
+      - name: 🛠 Build Project
+        run: |
+          echo "🏗 Starting Vite build..."
+          bun run build
+          echo "✅ Build completed."
+        env:
+          VITE_APP_ENV: ${{ secrets.VITE_APP_ENV }}
+          VITE_FIREBASE_API_KEY: ${{ secrets.VITE_FIREBASE_API_KEY }}
+          VITE_FIREBASE_AUTH_DOMAIN: ${{ secrets.VITE_FIREBASE_AUTH_DOMAIN }}
+          VITE_FIREBASE_PROJECT_ID: ${{ secrets.VITE_FIREBASE_PROJECT_ID }}
+          VITE_FIREBASE_STORAGE_BUCKET: ${{ secrets.VITE_FIREBASE_STORAGE_BUCKET }}
+          VITE_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.VITE_FIREBASE_MESSAGING_SENDER_ID }}
+          VITE_FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID }}
+          VITE_FIREBASE_MEASUREMENT_ID: ${{ secrets.VITE_FIREBASE_MEASUREMENT_ID }}
+
+
+      - name: 🚀 Deploy to sarava338 site
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.VITE_FIREBASE_SERVICE_ACCOUNT_SARAVA338 }}
+          projectId: ${{ secrets.VITE_FIREBASE_PROJECT_ID }}
+          channelId: live
+          target: sarava338
