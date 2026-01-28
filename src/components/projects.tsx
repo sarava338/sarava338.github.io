@@ -6,7 +6,7 @@ const projects = [
     title: "Peyar Seyali (பெயர் செயலி)",
     description:
       "A Tamil name database application built with React and TypeScript. Features a real-time backend powered by Firebase, offering advanced search and filtering capabilities to explore the cultural significance and meanings of Tamil names.",
-    tags: ["React", "Typescript", "Firebase"],
+    tags: ["React", "Typescript", "Firebase Authentication", "Firebase Hosting", "Firestore"],
     icon: <Database className="w-10 h-10 text-primary mb-4" />,
     gradient: "from-primary/20 to-transparent",
     repository: "https://github.com/sarava338/peyar-seyali",
